@@ -3,7 +3,7 @@ import React, { useState } from "react";
 
 const Tree = ({ data = [] }) => {
     return (
-      <div className="d-tree">
+      <div>
         <ul className="d-tree-container">
           {data.map((tree) => (
             <TreeNode node={tree} />
@@ -29,8 +29,8 @@ const TreeNode = ({ node }) => {
             </div>
           )}
   
-          <div>
-            {node.label}
+          <div className="label">
+            {node.label} {node.icon}
           </div>
         </div>
   

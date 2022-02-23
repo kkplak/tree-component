@@ -13,13 +13,18 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
 .d-tree-container {
-  padding: 10;
-  list-style: none;
+  width:auto;
+  list-style-type: none;
 }
 
 .d-tree-node {
-  padding: 0.75rem 1.25rem;
+  padding: 1vh 2vh;
+}
+ 
+.label:hover {
+background-color: #353942e8;
 }
 
 

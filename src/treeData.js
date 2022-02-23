@@ -3,12 +3,14 @@ export const treeData = [
     {
         key: "1",
         label: "App",
+        icon: "",
         title: "App File",
     },
 
     {
         key: "2",
-        label: "Components ▸",
+        label: "Components",
+        icon: "> ",
         title: "Components",
         children: [
             {
@@ -28,7 +30,8 @@ export const treeData = [
             },
             {
                 key: "2-4",
-                label: "Leafs ▸",
+                label: "Leafs",
+                icon: "> ",
                 title: "Components",
                 children: [
                     {
