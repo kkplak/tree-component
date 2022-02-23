@@ -3,7 +3,6 @@ export const treeData = [
     {
         key: "1",
         label: "App",
-        icon: "",
         title: "App File",
     },
 
