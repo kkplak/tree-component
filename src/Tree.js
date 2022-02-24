@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import MultiF from "./MultiF";
+
 
 
 const Tree = ({ data = [] }) => {
@@ -18,11 +20,16 @@ const TreeNode = ({ node }) => {
     const [childVisible, setChildVisiblity] = useState(false);
   
     const hasChild = node.children ? true : false;
+    
+    
 
+
+    
   
  return (
+   
       <li className="d-tree-node">
-
+      
         <div onClick={(e) => setChildVisiblity((v) => !v)}> {hasChild && (
             <div
               className={` ${ childVisible ? "active" : "" }`}>       
@@ -30,16 +37,25 @@ const TreeNode = ({ node }) => {
           )}
   
           <div className="label">
-            {node.label} {node.icon}
+         {node.label}{node.icon}
           </div>
+
+          <div className="bar">
+     
+          </div>
+          <MultiF />
         </div>
-  
-        {hasChild && childVisible && (
+       
+        {hasChild && childVisible &&   (
           <div>
             <ul className="d-tree-container">
+          
               <Tree data={node.children} />
+              
             </ul>
+          
           </div>
+          
         )}
       </li>
     );

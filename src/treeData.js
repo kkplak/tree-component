@@ -2,50 +2,50 @@
 export const treeData = [
     {
         key: "1",
-        label: "App",
-        title: "App File",
+        label: "Kitchen",
+        title: "Kitchen",
     },
 
     {
         key: "2",
-        label: "Components",
-        icon: "> ",
+        label: "Building",
+        icon: " >",
         title: "Components",
         children: [
             {
                 key: "2-1",
-                label: "Root",
+                label: "Room 1",
                 title: "Components",
             },
             {
                 key: "2-2",
-                label: "Core",
+                label: "Room 2",
                 title: "Components",
             },
             {
                 key: "2-3",
-                label: "Branch",
+                label: "Room 3",
                 title: "Components",
             },
             {
                 key: "2-4",
-                label: "Leafs",
-                icon: "> ",
+                label: "Gym",
+                icon: " >",
                 title: "Components",
                 children: [
                     {
                         key: "2-4-1",
-                        label: "Leaf1.js",
+                        label: "R 2.4.1",
                         title: "Components",
                     },
                     {
                         key: "2-4-2",
-                        label: "Leaf2.js",
+                        label: "R 2.4.2",
                         title: "Components",
                     },
                     {
                         key: "2-4-3",
-                        label: "Leaf3.js",
+                        label: "R 2.4.3",
                         title: "Components",
                     }
                 ]
@@ -54,13 +54,13 @@ export const treeData = [
     },
     {
         key: "3",
-        label: "CSS",
-        title: "CSS",
+        label: "Living room",
+        title: "Living Room",
     },
     {
         key: "4",
-        label: "Data",
-        title: "Data",
+        label: "Bathroom",
+        title: "Bathroom",
     }
 
 
